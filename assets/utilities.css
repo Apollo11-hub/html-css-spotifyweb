@@ -7,11 +7,12 @@
 main{
   height: calc(100vh - 100px);
   position: initial;
-  /* overflow: auto; */
 }
 
 footer{
   height: 100px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 ul{

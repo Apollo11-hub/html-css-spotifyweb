@@ -7,14 +7,17 @@
 
 .main-head-fixed-container{
   position: fixed;
-  width: 100%;
+  top: 0;
+  left: 0;
+  width: calc(100% - 250px);
   height: 100px;
+  margin-left: 250px;
   justify-content: flex-end;
   z-index: 99;
 }
 
 .head-button-upgrade{
-  width: 20%;
+  width: 300px;
   height:50px;
 }
 
@@ -25,8 +28,8 @@
 
 .left-column-menu-container{
   flex-direction: column;
-  width: 15%;
-  min-width: 15%;
+  width:250px;
+  min-width: 250px;
   height: 100%;
   padding: 15px 15px 0 15px;
 }
@@ -61,16 +64,70 @@
 
 .main-center-page-container{
   width: 100%;
-  height: calc(100vh - 200px);
-  margin-top: 100px;
-  overflow: auto;
+  height: calc(100vh - 100px);
+  padding: 20px;
+  overflow-y: auto;
 }
 
-.main-center-page-nav {
+.main-center-page-nav{
+  margin-top: 100px;
+  }
+
+
+  /* MAIN CENTER PAGE MUSIC SELECETION */
+  
+  
+.main-center-page-music-selection-container {
+  margin-bottom: 60px;
+}  
+
+.main-center-page-music-selection-item-container{
+  flex-wrap: wrap;
+  
 }
+
+.main-center-page-music-selection-item{
+  width: calc(90% / 6);
+  margin-right: calc(10% / 6);
+  min-height: 300px;
+}
+
+.main-center-page-music-selection-item img{
+  width: 100%;
+}
+
+.main-center-page-music-selection-item h3,p{
+  text-align: center;
+}
+
+/* /MAIN CENTER PAGE MUSIC SELECETION */
+
 
 /* /MAIN CENTER PAGE */
 
 /*
   /MAIN
+*/
+
+
+/*
+  FOOTER
+*/
+
+.footer-reproducing-container{
+  min-width: 250px;
+}
+
+.footer-play-container{
+
+}
+
+.footer-volume-container{
+  min-width: 250px;
+}
+
+
+
+/*
+  /FOOTER
 */

@@ -1,0 +1,58 @@
+@media screen and (max-width:1300px) {
+  .main-center-page-music-selection-item{
+    width: calc(90% / 4);
+    margin-right: calc(10% / 4);
+    min-height: 300px;
+  }
+}
+
+
+
+
+
+
+@media screen and (max-width:1000px) {
+  .main-center-page-music-selection-item{
+    width: calc(90% / 3);
+    margin-right: calc(10% / 3);
+    min-height: 300px;
+  }
+}
+
+
+
+
+@media screen and (max-width:700px) {
+  .main-center-page-music-selection-item{
+    width: calc(90% / 2);
+    margin:0 2.5% 0 2.5%;
+    min-height: 300px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
