@@ -14,6 +14,7 @@ footer{
   height: 100px;
   justify-content: space-between;
   align-items: center;
+  background-color: #282828;
 }
 
 ul{
@@ -37,10 +38,13 @@ ul{
   margin-bottom: 25px;
 }
 
+.margin-bootm50{
+  margin-bottom: 30px;
+}
+
 .padding15-0{
   padding: 15px 15px 0 15px;
 }
-
 
 .position-relative{
   position: relative;
@@ -48,17 +52,45 @@ ul{
   left: 0;
 }
 
+.pointer{
+  cursor: pointer;
+}
+
+.pointer-text{
+  cursor:text;
+}
+
+/* HOVER UTILITIES */
+
+.head-button-upgrade:hover{
+  transform: scale(1.2)
+}
+
+.left-column-nav ul li:hover,
+.left-column-footer span img:hover{
+  filter:brightness(50%);
+}
+
+.left-column-footer p img:hover{
+  filter:brightness(100%);
+}
+
+.left-column-playlist ul li:hover,
+.left-column-footer p:hover,
+.left-column-footer i:hover,
+.main-center-page-nav li:hover{
+  color: white;
+}
+
+
 
 .active-left-nav{
   border-left: 2px solid greenyellow;
 }
 
-
-
 .active-maint-nav{
   border-bottom: 2px solid greenyellow;
-  
-}
+  }
 
 .main-center-page-music-selection-item-overlay:hover{
   display: flex;
@@ -66,6 +98,7 @@ ul{
 }
 
 
+/* HOVER UTILITIES */
 #radius50{
   border-radius: 50%;
 }
