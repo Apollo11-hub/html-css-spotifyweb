@@ -38,7 +38,7 @@ ul{
   margin-bottom: 25px;
 }
 
-.margin-bootm50{
+.margin-bootm30{
   margin-bottom: 30px;
 }
 
@@ -60,9 +60,15 @@ ul{
   cursor:text;
 }
 
+#radius50{
+  border-radius: 50%;
+}
+
+
 /* HOVER UTILITIES */
 
-.head-button-upgrade:hover{
+.head-button-upgrade:hover,
+#special-footer-li:hover{
   transform: scale(1.2)
 }
 
@@ -78,11 +84,44 @@ ul{
 .left-column-playlist ul li:hover,
 .left-column-footer p:hover,
 .left-column-footer i:hover,
-.main-center-page-nav li:hover{
+.main-center-page-nav li:hover,
+.footer-reproducing-container i:hover{
   color: white;
 }
 
+.footer-name-song span:hover{
+  text-decoration: underline;
+  color: white;
+}
 
+.main-center-page-music-selection-item-overlay:hover{
+  display: flex;
+  opacity: 1;
+}
+
+.footer-volume-container .volu-line-overlay:hover,
+.footer-time-line .line-overlay:hover{
+  background-color: greenyellow;
+}
+
+.volu-line-overlay:hover .circle-time,
+.line-overlay:hover .circle-time {
+  visibility:visible;
+}
+
+.circle-time{
+  visibility: hidden;
+  padding: 8px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -5px;
+  left: 168px;
+  background-color: rgb(255 255 255);
+}
+
+#special-measure{
+  left: 84px;
+}
 
 .active-left-nav{
   border-left: 2px solid greenyellow;
@@ -92,19 +131,7 @@ ul{
   border-bottom: 2px solid greenyellow;
   }
 
-.main-center-page-music-selection-item-overlay:hover{
-  display: flex;
-  opacity: 1;
-}
-
-
 /* HOVER UTILITIES */
-#radius50{
-  border-radius: 50%;
-}
-
-/* SISTEMARE!<------------------------------------------ */
-
 
 
 
