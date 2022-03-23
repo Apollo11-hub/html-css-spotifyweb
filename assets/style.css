@@ -37,8 +37,8 @@
 
 .left-column-menu-container{
   flex-direction: column;
-  width:250px;
-  min-width: 250px;
+  width:280px;
+  min-width: 280px;
   height: 100%;
   padding: 15px 15px 0 15px;
   background-color: black;
@@ -136,7 +136,7 @@
   height: calc(100vh - 100px);
   padding: 20px;
   overflow-y: auto;
-  /* background-color: black; */
+  background-color: #141922;
 }
 
 .main-center-page-nav{
@@ -169,20 +169,27 @@
 }
 
 .main-center-page-music-selection-item{
-  position: relative;
-  width: calc(90% / 6);
-  margin-right: calc(10% / 6);
+  width: calc(80% / 6);
+  margin-right: calc(20% / 6);
   min-height: 300px;
 }
 
 .main-center-page-music-selection-item-overlay{
-  /* display: none; */
   position: absolute;
   top: 0px;
   right: 0px;
   width: 100%;
-  height: 63%;
+  min-height: 98.1%;
   background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+}
+
+.main-center-page-music-selection-item-overlay i{
+  font-size: 50px;
+  padding: 10px 10px 10px 15px;
+  border: 10px solid white;
+  border-radius: 50%;
+  color: white;
 }
 
 .main-center-page-music-selection-item img{
@@ -192,6 +199,15 @@
 .main-center-page-music-selection-item h3,
 .main-center-page-music-selection-item p{
   text-align: center;
+}
+
+.main-center-page-music-selection-item h3{
+  color: white;
+  margin: 10px 0 10px 0;
+}
+
+.main-center-page-music-selection-item p{
+  color: #7d7d7d;
 }
 
 /* /MAIN CENTER PAGE MUSIC SELECETION */
@@ -209,15 +225,94 @@
 */
 
 .footer-reproducing-container{
-  min-width: 250px;
+  width: 280px;
+  min-width: 280px;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
 }
+
+.footer-reproducing-container i{
+  font-size: 20px;
+  color: #757575;
+  padding: 5px;
+}
+
+.footer-image-name-song-container{
+  align-items: center;
+}
+
+.footer-image-name-song-container img{
+  width: 35%;
+  margin-right: 10px;
+}
+
+.footer-name-song{
+  text-align: center;
+}
+
+.footer-name-song h4{
+  color: white;
+}
+
+.footer-name-song span{
+  font-size: 15px;
+  color: #757575;
+}
+
 
 .footer-play-container{
+  flex-direction: column ;
+  align-items: center;
+}
+
+.footer-btn ul{
+  align-items: center;
+}
+
+.footer-btn ul li{
+  font-size: 25px;
+  color: white;
+  margin: 0 30px;
 
 }
 
+#special-footer-li{
+  padding: 5px 7px 5px 10px;
+  border: 5px solid white;
+  border-radius: 50%;
+}
+
+.footer-time-line{
+  align-items: center;
+}
+
+.footer-time-line span{
+  padding:10px 20px;
+  font-weight: 600;
+  color: white;
+}
+
+.footer-time-line .line{
+  position: initial;
+  width: 683px;
+  height: 5px;
+  border-radius: 10px;
+  background-color: #7d7d7d;
+}
+
+.footer-time-line .line-overlay{
+  position: absolute;
+  width: 183px;
+  height: 5px;
+  border-radius: 10px;
+  background-color: #b9b8b8;
+}
+
+
+
 .footer-volume-container{
-  min-width: 250px;
+  min-width: 280px;
 }
 
 

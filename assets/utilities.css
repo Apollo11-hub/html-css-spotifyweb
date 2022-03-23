@@ -29,15 +29,28 @@ ul{
   align-items: center;
 }
 
+.margin-bootm10{
+  margin-bottom: 10px;
+}
+
 .margin-bootm25{
   margin-bottom: 25px;
 }
 
+.padding15-0{
+  padding: 15px 15px 0 15px;
+}
+
+
+.position-relative{
+  position: relative;
+  top: 0;
+  left: 0;
+}
 
 
 .active-left-nav{
-  border-right: 2px solid greenyellow;
-
+  border-left: 2px solid greenyellow;
 }
 
 
@@ -47,12 +60,17 @@ ul{
   
 }
 
+.main-center-page-music-selection-item-overlay:hover{
+  display: flex;
+  opacity: 1;
+}
 
 
+#radius50{
+  border-radius: 50%;
+}
 
-
-
-
+/* SISTEMARE!<------------------------------------------ */
 
 
 
