@@ -14,11 +14,20 @@
   margin-left: 250px;
   justify-content: flex-end;
   z-index: 99;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .head-button-upgrade{
   width: 300px;
   height:50px;
+  margin-right: 20px;
+  border: 1px solid white;
+  border-radius: 50px;
+  color: white;
+}
+
+.head-button-upgrade span{
+  font-weight: 600;
 }
 
 /* /HEAD FIXED + BUTTON */
@@ -32,6 +41,7 @@
   min-width: 250px;
   height: 100%;
   padding: 15px 15px 0 15px;
+  background-color: black;
 }
 
 .left-column-logo img{
@@ -40,11 +50,48 @@
 
 .left-column-middle-container{
   height:calc(100% - 100px);
-  min-height: 65%;
+  min-height: 70%;
   overflow: auto;
 }
 
-.left-column-nav{
+.left-column-nav li{
+  margin-bottom: 15px;
+}
+.left-column-nav i{
+  color: #d2d2d2;
+  font-size: 30px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.left-column-nav span{
+  font-weight: 500;
+  font-size: 15px;
+  color: white;
+}
+
+
+.left-column-playlist h4{
+  color: white;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.left-column-playlist li{
+  margin-bottom: 12px;
+  color: #757575;
+}
+
+.left-column-playlist i{
+  font-size: 30px;
+  padding: 3px;
+  border-radius:5px;
+  vertical-align: middle;
+  background-color: #d2d2d2;
+  }
+
+.left-column-playlist span{
+  color: #757575;
 }
 
 .left-column-footer{
@@ -52,7 +99,29 @@
 }
 
 .left-column-footer p{
-  border-bottom: 1px solid grey;
+  color: #757575;
+  border-bottom: 1px solid #7d7d7d;
+}
+
+.left-column-footer i{
+  vertical-align: middle;
+  font-size: 8px;
+  padding:6px;
+  color: #7d7d7d;
+  border: 1px solid #7d7d7d;
+  border-radius: 50%;
+}
+
+.left-column-footer span {
+  font-weight: 600;
+  color: white;
+}
+.left-column-footer span i{
+  font-size: 20px;
+  border: 1px solid #757575;
+  border-radius: 50%;
+  color: white;
+  background-color: #7d7d7d;
 }
 
 
@@ -67,12 +136,19 @@
   height: calc(100vh - 100px);
   padding: 20px;
   overflow-y: auto;
+  /* background-color: black; */
 }
 
 .main-center-page-nav{
   margin-top: 100px;
   }
 
+  .main-center-page-nav li{
+    margin-right: 15px;
+    padding: 5px 0 5px 0;
+    font-weight: 500;
+    color: #7d7d7d;
+  }
 
   /* MAIN CENTER PAGE MUSIC SELECETION */
   
@@ -81,22 +157,40 @@
   margin-bottom: 60px;
 }  
 
+.main-center-page-music-selection-container h2{
+  font-size: 40px;
+  font-weight: 600;
+  color: white;
+}
+
 .main-center-page-music-selection-item-container{
   flex-wrap: wrap;
   
 }
 
 .main-center-page-music-selection-item{
+  position: relative;
   width: calc(90% / 6);
   margin-right: calc(10% / 6);
   min-height: 300px;
+}
+
+.main-center-page-music-selection-item-overlay{
+  /* display: none; */
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 100%;
+  height: 63%;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .main-center-page-music-selection-item img{
   width: 100%;
 }
 
-.main-center-page-music-selection-item h3,p{
+.main-center-page-music-selection-item h3,
+.main-center-page-music-selection-item p{
   text-align: center;
 }
 

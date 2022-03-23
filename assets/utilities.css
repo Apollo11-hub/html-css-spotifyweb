@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 
 main{
@@ -34,11 +35,17 @@ ul{
 
 
 
+.active-left-nav{
+  border-right: 2px solid greenyellow;
+
+}
 
 
 
-
-
+.active-maint-nav{
+  border-bottom: 2px solid greenyellow;
+  
+}
 
 
 
