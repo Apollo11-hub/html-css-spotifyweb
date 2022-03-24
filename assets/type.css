@@ -1,3 +1,6 @@
+
+/* MEDIA SCREEN 1200PX */
+
 @media screen and (max-width:1200px) {
   
   .main-center-page-music-selection-item{
@@ -6,14 +9,12 @@
     min-height: 300px;
   }
 
-  /* .main-center-page-music-selection-item h3{
-    transform: scale(0.7);
-  } */
 }
 
+/* MEDIA SCREEN 1200PX */
 
 
-
+/* MEDIA SCREEN 1000PX */
 
 
 @media screen and (max-width:1000px) {
@@ -22,13 +23,16 @@
     margin-right: calc(10% / 3);
     min-height: 300px;
   }
+  
 }
 
 
+/* MEDIA SCREEN 1000PX */
 
 
+/* MEDIA SCREEN 800PX */
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:800px) {
 
   .head-button-upgrade{
     width: 200px;
@@ -37,9 +41,6 @@
   .head-button-upgrade span{
     font-size: 0.7em;
   }
-  
-  
-
 
   .main-center-page-music-selection-item{
     width: calc(90% / 2);
@@ -47,19 +48,66 @@
     min-height: 300px;
   }
 
+  .footer-reproducing-container{
+    width: 200px;
+    min-width: 150px;
+    padding: 10px;
+    justify-content: space-between;
+  }
+  
+  .footer-reproducing-container  .i-con{ 
+    display:block ;
+  }
+
+  .footer-name-song h5,
+  .footer-name-song span{
+    font-size: 0.6em;
+  }
+
+
 }
+
+/* MEDIA SCREEN 500PX */
 
 
 @media screen and (max-width:500px) {
 
-  .head-button-upgrade{
-    width: 100px;
+  .main-head-fixed-container{
+    
   }
 
-  .head-button-upgrade span{
-    font-size: 0.5em;
+  .left-column-menu-container{
+    width: 50px;
+    min-width: 50px;
   }
+
+  .left-column-menu-container img,
+  .left-column-footer .down img,
+  .left-column-footer .up img{
+    width: 30px;
+  }
+
+  .left-column-logo{
+    display: none
+  }
+
+  .left-column-nav p,
+  .left-column-nav span,
+  .left-column-playlist li,
+  .left-column-playlist p,
+  .left-column-menu-container h5,
+  .left-column-footer .down p,
+  .left-column-footer .up p  { 
+    display: none;
+  }
+
+  .left-column-nav li {
+    padding: none; 
+  }
+  
+
+
 
 }
 
-
+/* MEDIA SCREEN 500PX */
