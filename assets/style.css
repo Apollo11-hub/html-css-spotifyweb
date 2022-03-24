@@ -10,7 +10,7 @@
   top: 0;
   left: 0;
   width: calc(100% - 250px);
-  height: 100px;
+  height: 80px;
   margin-left: 250px;
   justify-content: flex-end;
   z-index: 99;
@@ -19,55 +19,61 @@
 
 .head-button-upgrade{
   width: 300px;
-  height:50px;
+  padding: 15px 0;
   margin-right: 30px;
-  border: 1px solid white;
+  border: 1px solid rgb(255, 255, 255);
   border-radius: 50px;
-  color: white;
+  color: rgb(255, 255, 255);
   transition:all 400ms;
 }
 
-
 .head-button-upgrade span{
+  font-size: 1em;
   font-weight: 600;
 }
+
 
 /* /HEAD FIXED + BUTTON */
 
 
 /* LEFT COLUMN MENU */
 
+
 .left-column-menu-container{
   flex-direction: column;
-  width:280px;
-  min-width: 280px;
+  width:250px;
+  min-width: 250px;
   height: 100%;
-  padding: 15px 15px 0 15px;
   background-color: black;
+  overflow: hidden;
+}
+
+.left-column-logo{
+  line-height: 80px;
+  padding: 0 15px;
 }
 
 .left-column-logo img{
-  width: 80%;
-}
-
-.left-column-middle-container{
-  height:calc(100% - 100px);
-  min-height: 70%;
-  overflow: auto;
+  width: 65%;
+  vertical-align: middle;
 }
 
 .left-column-nav li{
+  padding: 0px 15px;
   margin-bottom: 15px;
   color: #757575;
 }
-
 
 #home{
   color: #ffffff;
 }
 
+.left-column-middle-container{
+  height:calc(100% - 81px);
+}
+
 .left-column-nav img{
-  width: 15%;
+  width: 12%;
   vertical-align: middle;
   margin-right: 5px;
 }
@@ -75,29 +81,46 @@
 
 .left-column-nav span{
   font-weight: 600;
-  font-size: 15px;
+  font-size: 13px;
   color: white;
   vertical-align: middle;
 }
   
+.left-column-playlist{
+  padding: 5px 15px;
+}
 
-.left-column-playlist h4{
+.left-column-playlist div{
+  min-height: 200px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  font-size: 13px;
+}
+
+.left-column-playlist h5{
   color: white;
   letter-spacing: 1px;
   margin-bottom: 10px;
 }
 
-.left-column-playlist li{
+.left-column-playlist p{
+  font-size: 13px;
+  font-weight: 600;
   margin-bottom: 15px;
   color: #757575;
 }
 
+.left-column-playlist li{
+  margin-bottom: 12px;
+  font-weight: 600;
+  color: #757575;
+}
+
 .left-column-playlist i{
-  font-size: 30px;
-  padding: 3px;
-  margin: 5px 10px 0px 0px;
-  border-radius:5px;
-  vertical-align: middle;
+  font-size: 20px;
+  padding: 7px;
+  margin-right: 10px;
+  color: black;
   background-color: #d2d2d2;
   }
 
@@ -106,7 +129,8 @@
 }
 
 .left-column-footer{
-  line-height: 50px;
+  line-height: 40px;
+  padding: 0 15px;
 }
 
 .left-column-footer p{
@@ -121,17 +145,18 @@
 }
 
 .left-column-footer span {
+  font-size: 15px;
   font-weight: 600;
   color: white;
 }
 
 .left-column-footer span img{
-  width: 10%;
+  width: 12%;
   border: 1px solid #757575;
   border-radius: 50%;
   background-color: #7d7d7d;
   vertical-align: middle;
-  padding: 0px 1px;
+  padding: 0px 2px;
 }
 
 /* /LEFT COLUMN MENU */
@@ -143,18 +168,20 @@
 .main-center-page-container{
   width: 100%;
   height: calc(100vh - 100px);
-  padding: 20px;
+  padding: 5px 25px;
   overflow-y: auto;
+  overflow-x: hidden;
   background-color: #141922;
 }
 
 .main-center-page-nav{
-  margin-top: 100px;
+  margin-top: 80px;
   }
 
-  .main-center-page-nav li{
+.main-center-page-nav li{
     margin-right: 15px;
     padding: 5px 0 5px 0;
+    font-size: 15px;
     font-weight: 500;
     color: #7d7d7d;
   }
@@ -163,11 +190,11 @@
   
   
 .main-center-page-music-selection-container {
-  margin-bottom: 60px;
+  margin: 0 auto 60px;
+  /* margin-bottom: 60px; */
 }  
 
 .main-center-page-music-selection-container h2{
-  font-size: 40px;
   font-weight: 600;
   color: white;
 }
@@ -178,48 +205,48 @@
 
 .main-center-page-music-selection-item-container{
   flex-wrap: wrap;
-  
 }
 
 .main-center-page-music-selection-item{
-  width: calc(80% / 6);
-  margin-right: calc(20% / 6);
-  min-height: 300px;
+  width: calc(90% / 6);
 }
 
 .main-center-page-music-selection-item-overlay{
   position: absolute;
   top: 0px;
-  right: 0px;
-  width: 100%;
-  min-height: 98.1%;
+  left: 0px;
+  width: 90%;
+  min-height: 98%;
   background-color: rgba(0, 0, 0, 0.4);
   opacity: 0;
 }
 
 .main-center-page-music-selection-item-overlay i{
-  font-size: 50px;
+  font-size: 25px;
   padding: 10px 10px 10px 15px;
-  border: 10px solid white;
+  border: 5px solid white;
   border-radius: 50%;
   color: white;
 }
 
 .main-center-page-music-selection-item img{
-  width: 100%;
+  width: 90%;
 }
 
-.main-center-page-music-selection-item h3,
+.main-center-page-music-selection-item h4,
 .main-center-page-music-selection-item p{
   text-align: center;
 }
 
-.main-center-page-music-selection-item h3{
+.main-center-page-music-selection-item h4{
   color: white;
-  margin: 10px 0 10px 0;
+  margin: 15px 20px 10px 0px;
+  font-size: 15px;
+    font-weight: 600;
 }
 
 .main-center-page-music-selection-item p{
+  font-size: 15px;
   color: #7d7d7d;
 }
 
@@ -238,15 +265,15 @@
 */
 
 .footer-reproducing-container{
-  width: 280px;
-  min-width: 280px;
+  width: 250px;
+  min-width: 250px;
   padding: 10px;
   justify-content: space-between;
   align-items: center;
 }
 
 .footer-reproducing-container i{
-  font-size: 20px;
+  font-size: 18px;
   color: #757575;
   padding: 5px;
 }
@@ -256,47 +283,55 @@
 }
 
 .footer-image-name-song-container img{
-  width: 35%;
-  margin-right: 10px;
+  width: 30%;
+  margin-right: 7px;
 }
 
 .footer-name-song{
   text-align: center;
 }
 
-.footer-name-song h4{
+.footer-name-song h5{
+  text-align: left;
   color: white;
 }
 
 .footer-name-song span{
-  font-size: 15px;
+  font-size: 13px;
+  font-weight: 500;
   color: #757575;
 }
 
 
 .footer-play-container{
+  width: 45%;
+  max-height: 100px;
   flex-direction: column ;
   align-items: center;
 }
 
+.footer-btn{
+  justify-content: center;
+  width: 100%;
+}
 .footer-btn ul{
   align-items: center;
 }
 
 .footer-btn ul li{
-  font-size: 25px;
+  font-size:20px;
   color: white;
-  margin: 0 30px;
-
+  margin: 0 20px;
 }
 
 #special-footer-li{
   padding: 5px 7px 5px 10px;
-  border: 5px solid white;
+  border: 4px solid white;
   border-radius: 50%;
 }
 
 .footer-time-line{
+  width: 100%;
   align-items: center;
 }
 
@@ -308,21 +343,19 @@
 
 .footer-time-line .line{
   position: initial;
-  width: 683px;
+  width: 100%;
   height: 5px;
   border-radius: 10px;
   background-color: #7d7d7d;
 }
 
 .footer-time-line .line-overlay{
-  position: absolute;
-  width: 183px;
+  position: relative;
+  width: 25%;
   height: 5px;
   border-radius: 10px;
   background-color: #b9b8b8;
 }
-
-
 
 .footer-volume-container{
   min-width: 280px;
@@ -330,7 +363,6 @@
   justify-content: space-around;
   margin-right: 10px;
 }
-
 
 .footer-volume-container div span{
   margin: 0 10px;
@@ -345,25 +377,24 @@
   top: 2.3px;
   left: 5px;
   font-size: 15px;
-
 }
 
 .footer-volume-container .volu-line{
   position: initial;
-  width: 150px;
+  width: 10vw;
   height: 5px;
   border-radius: 10px;
   background-color: #7d7d7d;
 }
 
 .footer-volume-container .volu-line-overlay{
-  position: absolute;
-  width: 100px;
+  position: relative;
+  width: 5vw;
   height: 5px;
   border-radius: 10px;
   background-color: #b9b8b8;
-
+}
 
 /*
   /FOOTER
-*/
+*/                                            

@@ -1,9 +1,14 @@
-@media screen and (max-width:1300px) {
+@media screen and (max-width:1200px) {
+  
   .main-center-page-music-selection-item{
     width: calc(90% / 4);
     margin-right: calc(10% / 4);
     min-height: 300px;
   }
+
+  /* .main-center-page-music-selection-item h3{
+    transform: scale(0.7);
+  } */
 }
 
 
@@ -22,37 +27,39 @@
 
 
 
+
 @media screen and (max-width:700px) {
+
+  .head-button-upgrade{
+    width: 200px;
+  }
+
+  .head-button-upgrade span{
+    font-size: 0.7em;
+  }
+  
+  
+
+
   .main-center-page-music-selection-item{
     width: calc(90% / 2);
     margin:0 2.5% 0 2.5%;
     min-height: 300px;
   }
+
 }
 
 
+@media screen and (max-width:500px) {
 
+  .head-button-upgrade{
+    width: 100px;
+  }
 
+  .head-button-upgrade span{
+    font-size: 0.5em;
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 
